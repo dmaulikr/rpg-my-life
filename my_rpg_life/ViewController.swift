@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,15 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func loginClicked() {
+        emailTxt.text = "helloo";
+    }
+    
+    
+    @IBAction func registerClicked() {
     }
 
 
