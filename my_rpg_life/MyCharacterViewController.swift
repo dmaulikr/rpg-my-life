@@ -10,9 +10,10 @@ import UIKit
 
 class MyCharacterViewController: UIViewController {
 
+    @IBOutlet weak var myCharacterTitle: UINavigationItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

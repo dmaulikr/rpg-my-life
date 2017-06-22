@@ -251,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="1517.5999999999999" y="35.532233883058474"/>
         </scene>
-        <!--View Controller-->
+        <!--My Character View Controller-->
         <scene sceneID="a52-O6-LXt">
             <objects>
-                <viewController id="uoD-HJ-DLi" sceneMemberID="viewController">
+                <viewController id="uoD-HJ-DLi" customClass="MyCharacterViewController" customModule="my_rpg_life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gke-NS-gF9"/>
                         <viewControllerLayoutGuide type="bottom" id="3gg-DL-VQS"/>
@@ -312,6 +312,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myCharacterTitle" destination="BqJ-si-Z37" id="tHz-il-xrc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3F-Jb-4io" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
