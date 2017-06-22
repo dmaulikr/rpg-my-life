@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97319C501EFB543F00C5CAA7 /* MyCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97319C4F1EFB543F00C5CAA7 /* MyCharacterViewController.swift */; };
 		973A322B1EF9F0BC00D2B986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A322A1EF9F0BC00D2B986 /* AppDelegate.swift */; };
 		973A322D1EF9F0BC00D2B986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A322C1EF9F0BC00D2B986 /* ViewController.swift */; };
 		973A32301EF9F0BC00D2B986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973A322E1EF9F0BC00D2B986 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97319C4F1EFB543F00C5CAA7 /* MyCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCharacterViewController.swift; sourceTree = "<group>"; };
 		973A32271EF9F0BC00D2B986 /* my_rpg_life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_rpg_life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973A322A1EF9F0BC00D2B986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		973A322C1EF9F0BC00D2B986 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				973A322C1EF9F0BC00D2B986 /* ViewController.swift */,
 				973A325C1EF9FDE000D2B986 /* PlayerCreationViewController.swift */,
 				973A32601EFA0AD800D2B986 /* MainViewController.swift */,
+				97319C4F1EFB543F00C5CAA7 /* MyCharacterViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				973A322D1EF9F0BC00D2B986 /* ViewController.swift in Sources */,
 				973A325A1EF9F6BB00D2B986 /* Player.swift in Sources */,
+				97319C501EFB543F00C5CAA7 /* MyCharacterViewController.swift in Sources */,
 				973A325D1EF9FDE000D2B986 /* PlayerCreationViewController.swift in Sources */,
 				973A322B1EF9F0BC00D2B986 /* AppDelegate.swift in Sources */,
 				973A32611EFA0AD800D2B986 /* MainViewController.swift in Sources */,
@@ -535,6 +539,7 @@
 				973A32511EF9F0BC00D2B986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		973A32521EF9F0BC00D2B986 /* Build configuration list for PBXNativeTarget "my_rpg_lifeTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +548,7 @@
 				973A32541EF9F0BC00D2B986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		973A32551EF9F0BC00D2B986 /* Build configuration list for PBXNativeTarget "my_rpg_lifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +557,7 @@
 				973A32571EF9F0BC00D2B986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
