@@ -11,13 +11,11 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var titleNameTxt: UINavigationItem!
-    var _player:UnsafePointer<Player>!
-    var player = Player();
+    //var player = Player();
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        point(p: &player);
-        titleNameTxt.title = _player.pointee.nickname;
+        titleNameTxt.title = MyPlayer.myPlayer.nickname;
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,15 +23,9 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /*
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let myCharacterViewController = segue.destination as? MyCharacterViewController {
-            //myCharacterViewController.point(p: &player);
+            
         }
-        */
-    }
-    
-    func point (p: UnsafePointer<Player>) {
-        _player = p;
-    }
+    }*/
 }

@@ -8,6 +8,10 @@
 
 import UIKit
 
+public struct MyPlayer {
+    static var myPlayer:Player = Player();
+}
+
 enum EClasses {
     case Alquemist
     case Knight

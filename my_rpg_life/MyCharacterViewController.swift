@@ -14,6 +14,7 @@ class MyCharacterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        myCharacterTitle.title = MyPlayer.myPlayer.nickname;
         // Do any additional setup after loading the view.
     }
 

@@ -29,9 +29,11 @@ class PlayerCreationViewController: UIViewController {
         player.nickname = "ArchMage";
         player.password = "4321";
         
-        if let mainViewController = segue.destination as? MainViewController {
+        MyPlayer.myPlayer = player;
+        
+        /*if let mainViewController = segue.destination as? MainViewController {
             mainViewController.player = player
-        }
+        }*/
     }
     
     @IBAction func backClicked(_ sender: Any) {
