@@ -18,8 +18,7 @@ class MyCharacterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         myCharacterTitle.title = MyPlayer.myPlayer.nickname;
-        nameTxt.text = MyPlayer.myPlayer.firstName;
-        
+        nameTxt.text = MyPlayer.myPlayer.nickname;
     }
 
     override func didReceiveMemoryWarning() {
