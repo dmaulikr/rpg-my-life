@@ -8,18 +8,24 @@
 
 import UIKit
 
+class myCellCustomClass: UITableViewCell
+{
+    @IBOutlet weak var tLabel: UILabel!
+    @IBOutlet weak var dLabel: UILabel!
+    
+}
+
 class MissionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
     @IBOutlet var tableView: UITableView!
     var items:[String] = ["Quest 1", "Quest 2"]
     var items2:[String] = ["bla bla bla", "bli bli bli"]
-    let cellReuseIdentifier = "textCell"
+    var cellReuseIdentifier = "textCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -34,9 +40,11 @@ class MissionsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
-        cell.textLabel?.text = self.items[indexPath.row]
-        cell.detailTextLabel?.text = self.items2[indexPath.row]
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! myCellCustomClass
+        //cell.textLabel?.text = self.items[indexPath.row]
+        //cell.detailTextLabel?.text = self.items2[indexPath.row]
+        cell.tLabel?.text = self.items[indexPath.row]
+        cell.dLabel?.text = self.items2[indexPath.row]
         
         return cell
     }
@@ -54,4 +62,9 @@ class MissionsViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("cell \(indexPath.row).")
     }
+    
+    @IBAction func backClicked(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true) {}
+    }
+    
 }

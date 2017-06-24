@@ -25,4 +25,7 @@ class MyCharacterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func backClicked(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true) {}
+    }
 }
