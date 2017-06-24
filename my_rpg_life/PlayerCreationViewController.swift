@@ -14,19 +14,24 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
         return 1
     }
 
-
+    var pb1:Bool!
+    var pb2:Bool!
     @IBOutlet weak var nicknameText: UITextField!
     @IBOutlet weak var raceText: UITextField!
     let pickerView = UIPickerView()
-    var pickOption:[String] = ["", "Barbarian", "Bard", "Druid", "Mage", "Paladin", "Rogue"]
+    var pickOption:[String] = ["", "Human", "Dwarf", "Gnome", "Elf", "Half Elf", "Dark Elf", "Half Orc", "Orc", "Half Dragon", "Jinn", "Soul"]
     
+    var pickOption2:[String] = ["Barbarian", "Mage", "Druid", "Cleric", "Knight", "Paladin", "Witch"]
+    
+    @IBOutlet weak var classRText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        pickerView.delegate = self
         
-        raceText.inputView = pickerView
+        pb1 = false
+        pb2 = false
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,15 +44,37 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickOption.count
+        if(pb1 && !pb2)
+        {
+            return pickOption.count
+        }
+        else
+        {
+            return pickOption2.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickOption[row]
+        if(pb1 && !pb2)
+        {
+            return pickOption[row]
+        }
+        else
+        {
+            return pickOption2[row]
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        raceText.text = pickOption[row]
+        if(pb1 && !pb2)
+        {
+            raceText.text = pickOption[row]
+        }
+        else
+        {
+            classRText.text = pickOption2[row]
+        }
+        
         self.view.endEditing(true);
     }
     
@@ -68,7 +95,19 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
     }
     
 
+    @IBAction func classRAction(_ sender: UITextField) {
+        pb1 = false
+        pb2 = true
+        pickerView.delegate = self
+        classRText.inputView = pickerView
+    }
 
+    @IBAction func raceAction(_ sender: UITextField) {
+        pb1 = true
+        pb2 = false
+        pickerView.delegate = self
+        raceText.inputView = pickerView
+    }
     
     
     @IBAction func backClicked(_ sender: Any) {
