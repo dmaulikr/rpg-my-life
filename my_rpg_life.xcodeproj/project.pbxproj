@@ -18,6 +18,7 @@
 		973A325A1EF9F6BB00D2B986 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A32591EF9F6BB00D2B986 /* Player.swift */; };
 		973A325D1EF9FDE000D2B986 /* PlayerCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A325C1EF9FDE000D2B986 /* PlayerCreationViewController.swift */; };
 		973A32611EFA0AD800D2B986 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A32601EFA0AD800D2B986 /* MainViewController.swift */; };
+		975D59831EFDFFDB006E261C /* MissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D59821EFDFFDB006E261C /* MissionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		973A32591EF9F6BB00D2B986 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		973A325C1EF9FDE000D2B986 /* PlayerCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCreationViewController.swift; sourceTree = "<group>"; };
 		973A32601EFA0AD800D2B986 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		975D59821EFDFFDB006E261C /* MissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				973A325C1EF9FDE000D2B986 /* PlayerCreationViewController.swift */,
 				973A32601EFA0AD800D2B986 /* MainViewController.swift */,
 				97319C4F1EFB543F00C5CAA7 /* MyCharacterViewController.swift */,
+				975D59821EFDFFDB006E261C /* MissionsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				973A325A1EF9F6BB00D2B986 /* Player.swift in Sources */,
 				97319C501EFB543F00C5CAA7 /* MyCharacterViewController.swift in Sources */,
 				973A325D1EF9FDE000D2B986 /* PlayerCreationViewController.swift in Sources */,
+				975D59831EFDFFDB006E261C /* MissionsViewController.swift in Sources */,
 				973A322B1EF9F0BC00D2B986 /* AppDelegate.swift in Sources */,
 				973A32611EFA0AD800D2B986 /* MainViewController.swift in Sources */,
 			);
