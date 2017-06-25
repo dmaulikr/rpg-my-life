@@ -25,12 +25,45 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
     
     @IBOutlet weak var classRText: UITextField!
     
+    
+    @IBOutlet weak var strPoints: UILabel!
+    @IBOutlet weak var conPoints: UILabel!
+    @IBOutlet weak var dexPoints: UILabel!
+    @IBOutlet weak var intPoints: UILabel!
+    @IBOutlet weak var wisPoints: UILabel!
+    @IBOutlet weak var charPoints: UILabel!
+    
+    var totalPoints:Int!
+    var strPointsI:Int!
+    var conPointsI:Int!
+    var dexPointsI:Int!
+    var intPointsI:Int!
+    var wisPointsI:Int!
+    var charPointsI:Int!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pb1 = false
         pb2 = false
-
+        
+        totalPoints = 28;
+        
+        strPointsI = 0;
+        conPointsI = 0;
+        dexPointsI = 0;
+        intPointsI = 0;
+        wisPointsI = 0;
+        charPointsI = 0;
+        
+        strPoints.text = "0";
+        conPoints.text = "0";
+        dexPoints.text = "0";
+        intPoints.text = "0";
+        wisPoints.text = "0";
+        charPoints.text = "0";
 
     }
 
@@ -113,4 +146,123 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
     @IBAction func backClicked(_ sender: Any) {
         self.dismiss(animated: true) {}
     }
+    
+    
+    @IBAction func nextImageAction(_ sender: Any) {
+    }
+    
+    
+    @IBAction func previusImageAction(_ sender: Any) {
+    }
+    
+    /* Point Distribution */
+    /* STR */
+    @IBAction func plusStrAction(_ sender: UIButton) {
+        if(totalPoints > 0 && (strPointsI >= 0 && strPointsI < 28))
+        {
+            strPointsI = strPointsI + 1;
+            totalPoints = totalPoints - 1;
+            strPoints.text = String(strPointsI)
+        }
+    }
+    
+    @IBAction func minusStrAction(_ sender: UIButton) {
+        if((totalPoints >= 0) && (strPointsI > 0 && strPointsI <= 28))
+        {
+            strPointsI = strPointsI - 1;
+            totalPoints = totalPoints + 1;
+            strPoints.text = String(strPointsI)
+        }
+    }
+    /*******/
+    /* CON */
+    @IBAction func plusConAction(_ sender: Any) {
+        if(totalPoints > 0 && (conPointsI >= 0 && conPointsI < 28))
+        {
+            conPointsI = conPointsI + 1;
+            totalPoints = totalPoints - 1;
+            conPoints.text = String(conPointsI)
+        }
+    }
+    @IBAction func minusConAction(_ sender: Any) {
+        if((totalPoints >= 0) && (conPointsI > 0 && conPointsI <= 28))
+        {
+            conPointsI = conPointsI - 1;
+            totalPoints = totalPoints + 1;
+            conPoints.text = String(conPointsI)
+        }
+    }
+    /*******/
+    /* DEX */
+    @IBAction func plusDexAction(_ sender: Any) {
+        if(totalPoints > 0 && (dexPointsI >= 0 && dexPointsI < 28))
+        {
+            dexPointsI = dexPointsI + 1;
+            totalPoints = totalPoints - 1;
+            dexPoints.text = String(dexPointsI)
+        }
+    }
+    @IBAction func minusDexAction(_ sender: Any) {
+        if((totalPoints >= 0) && (dexPointsI > 0 && dexPointsI <= 28))
+        {
+            dexPointsI = dexPointsI - 1;
+            totalPoints = totalPoints + 1;
+            dexPoints.text = String(dexPointsI)
+        }
+    }
+    /*******/
+    /* INT */
+    @IBAction func plusIntAction(_ sender: Any) {
+        if(totalPoints > 0 && (intPointsI >= 0 && intPointsI < 28))
+        {
+            intPointsI = intPointsI + 1;
+            totalPoints = totalPoints - 1;
+            intPoints.text = String(intPointsI)
+        }
+    }
+    @IBAction func minusIntAction(_ sender: Any) {
+        if((totalPoints >= 0) && (intPointsI > 0 && intPointsI <= 28))
+        {
+            intPointsI = intPointsI - 1;
+            totalPoints = totalPoints + 1;
+            intPoints.text = String(intPointsI)
+        }
+    }
+    /*******/
+    /* WIS */
+    @IBAction func plusWisAction(_ sender: Any) {
+        if(totalPoints > 0 && (wisPointsI >= 0 && wisPointsI < 28))
+        {
+            wisPointsI = wisPointsI + 1;
+            totalPoints = totalPoints - 1;
+            wisPoints.text = String(wisPointsI)
+        }
+    }
+    @IBAction func minusWisAction(_ sender: Any) {
+        if((totalPoints >= 0) && (wisPointsI > 0 && wisPointsI <= 28))
+        {
+            wisPointsI = wisPointsI - 1;
+            totalPoints = totalPoints + 1;
+            wisPoints.text = String(wisPointsI)
+        }
+    }
+    /*******/
+    /* CHA */
+    @IBAction func plusCharAction(_ sender: Any) {
+        if(totalPoints > 0 && (charPointsI >= 0 && charPointsI < 28))
+        {
+            charPointsI = charPointsI + 1;
+            totalPoints = totalPoints - 1;
+            charPoints.text = String(charPointsI)
+        }
+    }
+    @IBAction func minusCharAction(_ sender: Any) {
+        if((totalPoints >= 0) && (charPointsI > 0 && charPointsI <= 28))
+        {
+            charPointsI = charPointsI - 1;
+            totalPoints = totalPoints + 1;
+            charPoints.text = String(charPointsI)
+        }
+    }
+    /*******/
 }

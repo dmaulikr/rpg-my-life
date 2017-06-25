@@ -11,14 +11,11 @@ import UIKit
 class MyCharacterViewController: UIViewController {
 
     @IBOutlet weak var myCharacterTitle: UINavigationItem!
-    @IBOutlet weak var nameTxt: UITextField!
-    @IBOutlet weak var classTxt: UITextField!
-    @IBOutlet weak var ageTxt: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         myCharacterTitle.title = MyPlayer.myPlayer.nickname;
-        nameTxt.text = MyPlayer.myPlayer.nickname;
+        
     }
 
     override func didReceiveMemoryWarning() {
