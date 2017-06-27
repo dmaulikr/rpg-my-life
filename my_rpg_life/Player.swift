@@ -24,10 +24,11 @@ enum EClasses {
 }
 
 class Quests: UIView {
-    private var _title:String!
-    private var _details:String!
-    private var _reward:Int!
-    private var _renewable:Bool!
+    /* i'm so tired, i'm sorry for that :) */
+    public var _title:String!
+    public var _details:String!
+    public var _reward:Int!
+    public var _renewable:Bool!
 }
 
 class Player: UIView {
@@ -46,7 +47,8 @@ class Player: UIView {
     private var _wis:Int!
     private var _char:Int!
     private var _gender:String!
-    private var _quests:[Quests]!
+    public var _quests:Array<Quests>!
+    
     
     var xp:Int {
         get {

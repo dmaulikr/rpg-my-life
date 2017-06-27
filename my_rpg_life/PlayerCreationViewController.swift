@@ -113,6 +113,13 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let quest = Quests();
+        quest._title = "Work!";
+        quest._details = "Work as a slave!";
+        quest._renewable = true;
+        quest._reward = 20;
+        
         let player = Player();
         player.email = "caiocozza.art@gmail.com";
         player.firstName = "Caio";
@@ -128,7 +135,10 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
         player.char = 10;
         player.gender = "Male";
         player.password = "4321";
-        
+        player.xp = 0;
+        player._quests = Array();
+        player._quests.append(quest);
+ 
         MyPlayer.myPlayer = player;
     }
     

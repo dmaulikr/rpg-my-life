@@ -18,14 +18,15 @@ class myCellCustomClass: UITableViewCell
 class MissionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
-    var items:[String] = ["Quest 1", "Quest 2"]
-    var items2:[String] = ["bla bla bla", "bli bli bli"]
+    var items:[String] = []
+    var items2:[String] = []
     var cellReuseIdentifier = "textCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        self.addMissionToList();
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -33,6 +34,15 @@ class MissionsViewController: UIViewController, UITableViewDataSource, UITableVi
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func addMissionToList()
+    {
+        //MyPlayer.myPlayer._quests;
+        for __quest in MyPlayer.myPlayer._quests {
+            items.append(__quest._title);
+            items2.append(__quest._details);
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
