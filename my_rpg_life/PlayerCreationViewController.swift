@@ -118,6 +118,15 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
         player.firstName = "Caio";
         player.surName = "Cozza";
         player.nickname = "ArchMage";
+        player.race = "Human";
+        player.classe = "Mage";
+        player.str = 8;
+        player.con = 10;
+        player.dex = 8;
+        player.int = 18;
+        player.wis = 16;
+        player.char = 10;
+        player.gender = "Male";
         player.password = "4321";
         
         MyPlayer.myPlayer = player;
