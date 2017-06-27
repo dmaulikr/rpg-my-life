@@ -573,6 +573,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="tintColor" red="0.73233336419999995" green="0.74004213649999995" blue="0.74004213649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.73233336422171846" green="0.74004213647668393" blue="0.74004213647668393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>

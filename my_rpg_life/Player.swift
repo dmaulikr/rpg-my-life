@@ -23,7 +23,15 @@ enum EClasses {
     case Thieve
 }
 
+class Quests: UIView {
+    private var _title:String!
+    private var _details:String!
+    private var _reward:Int!
+    private var _renewable:Bool!
+}
+
 class Player: UIView {
+    private var _xp:Int!
     private var _firstName:String!
     private var _surName:String!
     private var _email:String!
@@ -38,13 +46,16 @@ class Player: UIView {
     private var _wis:Int!
     private var _char:Int!
     private var _gender:String!
+    private var _quests:[Quests]!
     
-    //private var _class:EClasses!
-    //private var _invetory:[String]!
-    //private var _xp:Int32!
-    //private var _level:Int8!
-    //private var _sp:Int16!
-    //private var _hp:Int16!
+    var xp:Int {
+        get {
+            return _xp;
+        }
+        set {
+            _xp = newValue;
+        }
+    }
     
     var gender:String {
         get {
