@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971457F81F0968FC00872BC7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971457F71F0968FC00872BC7 /* CoreData.framework */; };
+		971457FB1F09699D00872BC7 /* RpgDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 971457F91F09699D00872BC7 /* RpgDataModel.xcdatamodeld */; };
 		97319C501EFB543F00C5CAA7 /* MyCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97319C4F1EFB543F00C5CAA7 /* MyCharacterViewController.swift */; };
 		973A322B1EF9F0BC00D2B986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A322A1EF9F0BC00D2B986 /* AppDelegate.swift */; };
 		973A322D1EF9F0BC00D2B986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A322C1EF9F0BC00D2B986 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		971457F71F0968FC00872BC7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		971457FA1F09699D00872BC7 /* RpgDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RpgDataModel.xcdatamodel; sourceTree = "<group>"; };
 		97319C4F1EFB543F00C5CAA7 /* MyCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCharacterViewController.swift; sourceTree = "<group>"; };
 		973A32271EF9F0BC00D2B986 /* my_rpg_life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_rpg_life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973A322A1EF9F0BC00D2B986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971457F81F0968FC00872BC7 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971457F61F0968FC00872BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				971457F71F0968FC00872BC7 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		973A321E1EF9F0BB00D2B986 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 				973A323E1EF9F0BC00D2B986 /* my_rpg_lifeTests */,
 				973A32491EF9F0BC00D2B986 /* my_rpg_lifeUITests */,
 				973A32281EF9F0BC00D2B986 /* Products */,
+				971457F61F0968FC00872BC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +128,7 @@
 				973A32311EF9F0BC00D2B986 /* Assets.xcassets */,
 				973A32331EF9F0BC00D2B986 /* LaunchScreen.storyboard */,
 				973A32361EF9F0BC00D2B986 /* Info.plist */,
+				971457F91F09699D00872BC7 /* RpgDataModel.xcdatamodeld */,
 			);
 			path = my_rpg_life;
 			sourceTree = "<group>";
@@ -295,6 +310,7 @@
 				97319C501EFB543F00C5CAA7 /* MyCharacterViewController.swift in Sources */,
 				973A325D1EF9FDE000D2B986 /* PlayerCreationViewController.swift in Sources */,
 				975D59831EFDFFDB006E261C /* MissionsViewController.swift in Sources */,
+				971457FB1F09699D00872BC7 /* RpgDataModel.xcdatamodeld in Sources */,
 				973A322B1EF9F0BC00D2B986 /* AppDelegate.swift in Sources */,
 				973A32611EFA0AD800D2B986 /* MainViewController.swift in Sources */,
 			);
@@ -564,6 +580,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		971457F91F09699D00872BC7 /* RpgDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				971457FA1F09699D00872BC7 /* RpgDataModel.xcdatamodel */,
+			);
+			currentVersion = 971457FA1F09699D00872BC7 /* RpgDataModel.xcdatamodel */;
+			path = RpgDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 973A321F1EF9F0BB00D2B986 /* Project object */;
 }
