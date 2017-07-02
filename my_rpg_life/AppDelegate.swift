@@ -84,7 +84,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func storeTranscription (nickname: String, firstname: String) {
+    func storePlayer (nickname: String, firstname: String, gender: String, chara: Int16,
+                      classe: String, con: Int16, dex: Int16, email: String, int: Int16,
+                      password: String, race: String, str: Int16, surname: String,
+                      wis: Int16, xp: Int32) {
         let context = getContext()
         
         //retrieve the entity that we just created
@@ -92,7 +95,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let player_entity = NSManagedObject(entity: entity!, insertInto: context)
         
-        player_entity.setValue(nickname, forKey: nickname);
+        player_entity.setValue(nickname, forKey: "nickname")
+        player_entity.setValue(firstname, forKey: "firstname")
+        player_entity.setValue(gender, forKey: "gender")
+        player_entity.setValue(classe, forKey: "classe")
+        player_entity.setValue(password, forKey: "password")
+        player_entity.setValue(race, forKey: "race")
+        player_entity.setValue(str, forKey: "str")
+        player_entity.setValue(surname, forKey: "surname")
+        player_entity.setValue(wis, forKey: "wis")
+        player_entity.setValue(xp, forKey: "xp")
+        player_entity.setValue(con, forKey: "con")
+        player_entity.setValue(dex, forKey: "dex")
+        player_entity.setValue(chara, forKey: "chara")
+        player_entity.setValue(int, forKey: "int")
+        
         
         //save the object
         do {
