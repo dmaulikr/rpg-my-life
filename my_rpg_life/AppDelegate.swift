@@ -84,10 +84,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func storePlayer (nickname: String, firstname: String, gender: String, chara: Int16,
-                      classe: String, con: Int16, dex: Int16, email: String, int: Int16,
-                      password: String, race: String, str: Int16, surname: String,
-                      wis: Int16, xp: Int32) {
+    func storePlayer (nickname: String, firstname: String, gender: String, chara: Int,
+                      classe: String, con: Int, dex: Int, email: String, int: Int,
+                      password: String, race: String, str: Int, surname: String,
+                      wis: Int, xp: Int) {
         let context = getContext()
         
         //retrieve the entity that we just created

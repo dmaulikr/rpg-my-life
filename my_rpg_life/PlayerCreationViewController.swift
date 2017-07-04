@@ -139,6 +139,9 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
         player._quests = Array();
         player._quests.append(quest);
  
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.storePlayer(nickname: player.nickname, firstname: player.firstName, gender: player.gender, chara: player.char, classe: player.classe, con: player.con, dex: player.dex, email: player.email, int: player.int, password: player.password, race: player.race, str: player.str, surname: player.surName, wis: player.wis, xp: player.xp);
+        
         MyPlayer.myPlayer = player;
     }
     
