@@ -437,6 +437,7 @@
                         <outlet property="classRText" destination="5yo-hs-h0T" id="n3f-Ws-G8c"/>
                         <outlet property="conPoints" destination="Cb5-Jr-Pu5" id="VNA-gu-lQ4"/>
                         <outlet property="dexPoints" destination="0z7-ZM-Bpo" id="8Rb-Rg-kin"/>
+                        <outlet property="genderText" destination="DDm-fG-cPZ" id="DxB-YK-Gx4"/>
                         <outlet property="intPoints" destination="0XW-Hf-6yX" id="ePd-Gt-mph"/>
                         <outlet property="nicknameText" destination="m0N-tC-xzG" id="Eg2-Sz-0aW"/>
                         <outlet property="raceText" destination="KVx-IJ-uof" id="gWc-zd-lTe"/>
@@ -555,7 +556,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5X2-y2-YeX" id="B8l-8s-dV4">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrO-JL-F14">

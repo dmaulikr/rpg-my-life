@@ -24,6 +24,7 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
     var pickOption2:[String] = ["Barbarian", "Mage", "Druid", "Cleric", "Knight", "Paladin", "Witch"]
     
     @IBOutlet weak var classRText: UITextField!
+    @IBOutlet weak var genderText: UITextField!
     
     
     @IBOutlet weak var strPoints: UILabel!
@@ -140,7 +141,12 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
         player._quests.append(quest);
  
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.storePlayer(nickname: player.nickname, firstname: player.firstName, gender: player.gender, chara: player.char, classe: player.classe, con: player.con, dex: player.dex, email: player.email, int: player.int, password: player.password, race: player.race, str: player.str, surname: player.surName, wis: player.wis, xp: player.xp);
+        
+        //appDelegate.deleteRecords();
+        
+        appDelegate.getPlayer();
+        
+        appDelegate.storePlayer(nickname: nicknameText.text!, firstname: "Test", gender: genderText.text!, chara: charPointsI!, classe: classRText.text!, con: conPointsI!, dex: dexPointsI!, email: "test@test.com", int: intPointsI!, password: "123456", race: raceText.text!, str: strPointsI!, surname: "Tester", wis: wisPointsI!, xp: 0);
         
         MyPlayer.myPlayer = player;
     }
