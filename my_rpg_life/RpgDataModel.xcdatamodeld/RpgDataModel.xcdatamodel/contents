@@ -17,7 +17,15 @@
         <attribute name="wis" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="xp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="QuestData" representedClassName="QuestData" syncable="YES" codeGenerationType="class">
+        <attribute name="date_to_complete" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reward_item" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="reward_xp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="PlayerData" positionX="-54" positionY="-9" width="128" height="270"/>
+        <element name="QuestData" positionX="-54" positionY="108" width="128" height="120"/>
     </elements>
 </model>
