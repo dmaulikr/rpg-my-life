@@ -146,25 +146,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func getPlayer () {
-        //create a fetch request, telling it about the entity
+    func getPlayer () -> PlayerData {
         let fetchRequest: NSFetchRequest<PlayerData> = PlayerData.fetchRequest()
         
         do {
-            //go get the results
             let searchResults = try getContext().fetch(fetchRequest)
             
-            //I like to check the size of the returned results!
             print ("num of results = \(searchResults.count)")
             
-            //You need to convert to NSManagedObject to use 'for' loops
-            for trans in searchResults as [NSManagedObject] {
-                //get the Key Value pairs (although there may be a better way to do that...
-                print("\(String(describing: trans.value(forKey: "nickname")))")
+            if(searchResults.count > 0)
+            {
+                /* only one */
+                return searchResults.first!
             }
+            
+            /*for ppl in searchResults as [NSManagedObject] {
+                print("\(String(describing: ppl.value(forKey: "nickname")))")
+            }*/
         } catch {
             print("Error with request: \(error)")
         }
+        let return_empty:PlayerData = PlayerData()
+        return return_empty
     }
     
     func getContext () -> NSManagedObjectContext {
