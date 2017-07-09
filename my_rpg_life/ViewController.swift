@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
-    var __myPlayer:PlayerData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +29,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        __myPlayer = appDelegate.getPlayer();
-        if(__myPlayer?.email != "" && __myPlayer?.password != "")
-        {
-            //means we have a true player
-        }
+        appDelegate.getPlayer();
     }
     
     

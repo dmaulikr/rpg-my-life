@@ -13,6 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var _my_player: PlayerData?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -146,7 +147,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func getPlayer () -> PlayerData {
+    func getPlayer () {
         let fetchRequest: NSFetchRequest<PlayerData> = PlayerData.fetchRequest()
         
         do {
@@ -157,7 +158,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if(searchResults.count > 0)
             {
                 /* only one */
-                return searchResults.first!
+                _my_player = searchResults.first
             }
             
             /*for ppl in searchResults as [NSManagedObject] {
@@ -166,8 +167,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print("Error with request: \(error)")
         }
-        let return_empty:PlayerData = PlayerData()
-        return return_empty
     }
     
     func getContext () -> NSManagedObjectContext {
