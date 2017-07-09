@@ -28,6 +28,10 @@ class ViewController: UIViewController {
     @IBAction func loginClicked() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         __myPlayer = appDelegate.getPlayer();
+        if(__myPlayer?.email != "" && __myPlayer?.password != "")
+        {
+            //means we have a true player
+        }
         
     }
     
