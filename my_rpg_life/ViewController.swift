@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
+    var __myPlayer:PlayerData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func loginClicked() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        var _myPlayer:PlayerData = appDelegate.getPlayer();
+        __myPlayer = appDelegate.getPlayer();
         
     }
     
