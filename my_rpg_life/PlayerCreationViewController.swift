@@ -144,7 +144,7 @@ class PlayerCreationViewController: UIViewController, UIPickerViewDataSource, UI
         
         //appDelegate.deleteRecords();
         
-        //appDelegate.getPlayer();
+        //var test_player:PlayerData = appDelegate.getPlayer();
         
         appDelegate.storePlayer(nickname: nicknameText.text!, firstname: "Test", gender: genderText.text!, chara: charPointsI!, classe: classRText.text!, con: conPointsI!, dex: dexPointsI!, email: "test@test.com", int: intPointsI!, password: "123456", race: raceText.text!, str: strPointsI!, surname: "Tester", wis: wisPointsI!, xp: 0);
         

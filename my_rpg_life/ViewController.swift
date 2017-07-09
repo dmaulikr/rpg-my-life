@@ -25,7 +25,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginClicked() {
-        emailTxt.text = "helloo";
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        var _myPlayer:PlayerData = appDelegate.getPlayer();
+        
     }
     
     
