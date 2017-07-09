@@ -61,6 +61,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="jm1-Pw-rko"/>
+                                    <segue destination="DNk-1z-fJ4" kind="show" id="6so-iu-aFg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oQ-xz-ZMp">
@@ -807,4 +808,7 @@
         <image name="swords-emblem (1)" width="512" height="512"/>
         <image name="wyvern (1)" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6so-iu-aFg"/>
+    </inferredMetricsTieBreakers>
 </document>

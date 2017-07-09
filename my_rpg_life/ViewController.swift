@@ -26,13 +26,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginClicked() {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         __myPlayer = appDelegate.getPlayer();
         if(__myPlayer?.email != "" && __myPlayer?.password != "")
         {
             //means we have a true player
         }
-        
     }
     
     
